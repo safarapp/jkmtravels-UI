@@ -1,0 +1,52 @@
+body {font-family: 'open_sansregular';}
+
+#showcase {
+    background: url(/app/images/servicesBkg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:80px 0;
+    font-family: 'open_sansregular';
+    border-bottom: 5px solid #FFC105;
+}
+
+#showcase h1 {
+    color:white;
+}
+
+#showcase h2 {
+    font-weight:bold;
+    text-align: center;
+    background: rgba(255,255,255,0.6);
+    padding:15px 0;
+    color: #404948;
+}
+
+#services {margin:60px 0;}
+
+.btn-primary {margin:10px 0;}
+
+.well {margin-top:30px;font-size: 16px;font-family: 'open_sanslight';}
+
+.quote-form {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    display: inline-block;
+}
+
+.quote-text {
+    background: #FFC105;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.quote-form h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'open_sanslight';
+    font-size: 30px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,13 @@
+body {background: #E9E8E8;font-family: 'open_sanslight';}
+.header {background:#fff;}
+.headline {background:#DCDADA;padding:10px 0;}
+.boxes {background: #fff;padding:10px 0;margin-top:15px;}
+.col-md-3 .boxes {padding:10px 20px;}
+footer {margin-top:15px;}
+.blue {color:#2D659E;font-weight: bold;}
+.green {color:#98CE45;}
+.marg5 {margin-top:5px;}
+.marg10 {margin-top:10px;}
+.margl10 {margin-left:10px;}
+.big {font-size:20px;font-weight: bold;}
+.leftBorder {border-left: 1px solid #ccc;}

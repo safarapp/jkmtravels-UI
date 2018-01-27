@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "API": "http://wasapp-t03.estes.us.dom:9081/"
+  },
+  "prod": {
+    "API": "http://wasapp-t03.estes.us.dom:9081/"
+  }
+}

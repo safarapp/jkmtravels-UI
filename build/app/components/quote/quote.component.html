@@ -1,0 +1,26 @@
+<div *ngIf="errorMessage" class="alert alert-danger">{{errorMessage}}</div>
+<h1>Your Quote</h1>
+<div class="row">
+    <form #quoteForm="ngForm">
+        <div class="col-md-6">
+            <input type="text" placeholder="From" name="a" [(ngModel)]="quoteRequest.from" class="txt-from" required maxlength="50"/>
+            <input type="date" class="txt-date des" name="inputDate" [(ngModel)]="quoteRequest.startDate" id="inputDate" required>
+            <!--<input type="text" id="startTime"  #startTime="ngModel" name="startTime" class="txt-time"
+                   [ngClass]="(!startTime.valid && startTime.value) ?'errorhighlight':''" time [(ngModel)]="quoteRequest.startTime" placeholder="hh:mm"
+                   pattern="^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$" maxlength="5" required/>-->
+            <!--<div *ngIf="(!startTime.valid && startTime.value) || (!startTime.valid && startTime.value)" class="text-center text-danger text-nowrap"><small>Invalid Time Format</small></div>-->
+            <input type="text" placeholder="group size" name="c" [(ngModel)]="quoteRequest.groupSize" onlydigits class="txt-group" maxlength="3"/>
+            <!--<label class="chk-label"><input type="checkbox" name="d" [(ngModel)]="quoteRequest.oneWay" class="chkbox">One Way</label>-->
+        </div>
+        <div class="col-md-6">
+            <!--<div *ngIf="!quoteRequest.oneWay">-->
+                <input type="text" placeholder="to" ng-control="to" name="e" [(ngModel)]="quoteRequest.to" class="txt-from" maxlength="50"/>
+                <input type="date" class="txt-date des" name="endDate" [(ngModel)]="quoteRequest.endDate" id="endDate" required>
+                <!--<input type="text" id="endTime"  #endTime="ngModel" name="endTime" class="txt-time"
+                       [ngClass]="(!endTime.valid && endTime.value) ?'errorhighlight':''" time [(ngModel)]="quoteRequest.endTime" placeholder="hh:mm"
+                       pattern="^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$" maxlength="5" required/>-->
+            <!--</div>-->
+            <input type="submit" value="go" class="btn-from" (click)="getQuote()" [disabled]="!quoteForm.form.valid"/>
+        </div>
+    </form>
+</div>

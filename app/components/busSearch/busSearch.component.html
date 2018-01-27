@@ -1,0 +1,86 @@
+<div class="headline">
+    <div class="container">
+        <div class="col-md-10">
+            <span class="big">{{quoteRequest.from}} <i class="fa fa-exchange"></i>{{quoteRequest.to}}</span><span class="margl10"> From: {{quoteRequest.startDate}} To: {{quoteRequest.endDate}}</span>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-danger">Modify Search</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-md-9">
+        <div class="row boxes" *ngFor='let x of quoteResponse'>
+            <div class="col-md-10">
+                <div class="col-md-7">
+                    <span class="big"><strong>{{x.businessName}}</strong></span>
+                </div>
+                <div class="col-md-5" align="right">
+                    <img src="/app/images/icons/aircondition.png" />
+                    <img src="/app/images/icons/drink.png" />
+                    <img src="/app/images/icons/tv.png" />
+                    <img src="/app/images/icons/charger.png" />
+                    <img src="/app/images/icons/tracking.png" />
+                </div>
+                <div class="col-md-12"><hr></div>
+                <div class="col-md-8 marg5">
+                    <span>Volvo A/C Sleeper, Available Bus: 3, Estimated Distance: 3500km</span>
+                </div>
+            </div>
+            <div class="col-md-2 green big leftBorder" align="center">
+                <h4><strong>&#8377; {{x.ratePerKm}} </strong></h4>
+                <button class="btn btn-info" (click)="getBooking()" >Select</button>
+            </div>
+        </div>
+    </div> <!-- /col-md-9 -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col-md-12">
+                <div class="row boxes">
+                    <h4><strong>Quote Price</strong></h4>
+                    <hr>
+                </div>
+                <div class="row boxes">
+                    <h4><strong>Bus Type</strong></h4>
+                    <hr>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">AC</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">NON AC</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Sleeper</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Seater</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Seater/Sleeper</label></p>
+                </div>
+
+                <div class="row boxes">
+                    <h4><strong>Bus Category </strong></h4>
+                    <hr>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">VOLVO</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Others</label></p>
+                </div>
+
+                <div class="row boxes">
+                    <h4><strong>Bus Category </strong></h4>
+                    <hr>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">AC</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Water</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Movie</label></p>
+                    <p><label class="checkbox-inline"><input type="checkbox" value="">Live Bus Tracking</label></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12" align="center">
+        <ul class="pagination">
+            <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+        </ul>
+    </div>
+
+</div>

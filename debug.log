@@ -1,0 +1,8 @@
+[0314/221815.001:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0314/223111.033:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0314/223613.967:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0314/223923.875:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0315/225415.119:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0316/215037.626:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0404/191430.367:ERROR:exception_snapshot_win.cc(87)] thread ID 3620 not found in process
+[0404/191430.367:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
